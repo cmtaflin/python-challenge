@@ -1,1 +1,25 @@
+#### First Outline
+##Block 1: incoming data and set up
+#import csv
+#csv_var
+#open
+#Csv_reader
+########
 
+#Check Block 1
+
+####Block 2: High level data
+##loop to count rows (total Votes)
+##Create and place elements into Bucket called Candidates
+#####
+
+#Check Block 2
+
+##Block 3: Functions
+#Function ()
+  #run for candidate bucket
+  #Total votes for candidate
+  #calculate % of total votes 
+  #Write results to Dictionary (easer to call)
+  
+  
