@@ -1,8 +1,10 @@
 #### First Outline (summary)
-#Block 1: incoming data and set up
-#Block 2: Create High level data and candidate list
-#Block 3: Functions and write to Dictionary
-#Block 4: Print results and write to csv
+#Block 1: save csv to git hub using code
+#Block 2: incoming data and set up
+#Block 3: Create High level data and candidate list
+#Block 4: Def Function 
+#Block 5: Run Function for bucket of candidates & write to Dictionary
+#Block 6: Print results and write to csv
 
 
 ##Block 1: incoming data and set up####
@@ -22,7 +24,9 @@
 
 #Check Block 2
 
-##Block 3: Functions
+##Block 3: Def Functions
+
+
 #Function ()
   #run for candidate bucket
   #Total votes for candidate
