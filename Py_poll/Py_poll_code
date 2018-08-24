@@ -1,5 +1,12 @@
-#### First Outline
-##Block 1: incoming data and set up
+#### First Outline (summary)
+#Block 1: incoming data and set up
+#Block 2: Create High level data and candidate list
+#Block 3: Functions and write to Dictionary
+#Block 4: Print results and write to csv
+
+
+##Block 1: incoming data and set up####
+
 #import csv
 #csv_var
 #open
