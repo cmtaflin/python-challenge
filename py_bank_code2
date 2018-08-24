@@ -1,0 +1,92 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Aug 17 15:04:07 2018
+
+@author: Craig
+"""
+
+# =============================================================================
+# Python1 homeworks
+# =============================================================================
+
+
+# =============================================================================
+# #psydo code
+# =============================================================================
+
+#Summary
+    #Import File, delimit, and index
+import os
+import csv
+csv_path_pybank = os.path.join("budget_data.csv")
+
+
+
+#Var
+#total_months = #record_count =+ 1 starting at zero
+total_months = 0    
+
+#total_net_amt 
+total_net_amt= 0
+
+#current month Incoe
+current_month_net_amt= 0
+change_from_prior_month=0
+#last month amount
+last_month_net_amt =0 
+
+#pnl_mth_change_current
+current_month_change = 0
+
+gr_incr_champ_val= 0
+
+        #grt Increases & Decreases  
+          #grt_incr
+            #grt_incr_champion_value: Carries the title down the rows
+            #grt_incr_champion_mth
+            #grt_incr_champion_yr
+          #grt_decr  
+            #grt_decr_champion: Carries the skunk down the rows hoping to give it away
+            #grt_decr_champion_mth
+            #grt_decr_champion_yr    
+gr_decr_champ_val=0
+Total_net_amt =0 
+
+#Open the file and Assign import name
+with open (csv_path_pybank, newline= '') as csv_file_pybank:
+    csv_var_pybank= csv.reader(csv_file_pybank, delimiter=',')
+
+    csv_header = next(csv_var_pybank)
+    print(f"CSV Header: {csv_header}")
+
+def run_through(pnl_data):
+      
+        #Count_rows = Count_rows +1
+        
+        current_month_net_amt = int(pnl_data[1])
+    
+        
+        change_from_prior_month = current_month_net_amt - last_month_net_amt
+        Total_change_prior_month = change_from_prior_month       
+        print("Total change prior " +str(Total_change_prior_month))
+      
+        
+        
+        print("Current Monthly Amount  " + str(current_month_net_amt))
+        
+        print ("Change PM " + str(change_from_prior_month))
+        print("Total_change from PM " +str(Total_change_prior_month)) 
+        
+        
+        Total_net_amt = Total_net_amt + current_month_net_amt
+        print("total Net amount  " +str(Total_net_amt))
+        print("-----" +str(Count_rows) + "--------------------")
+        break
+    
+
+            
+
+for rows in csv_var_pybank:
+        run_through(rows) 
+        
+       
